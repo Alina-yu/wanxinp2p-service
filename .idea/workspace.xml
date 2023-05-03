@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="身份认证功能bug修复" />
+    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="添加用户注册功能" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -388,6 +388,7 @@
       <workItem from="1574045587771" duration="80000" />
       <workItem from="1683047068491" duration="2736000" />
       <workItem from="1683095395873" duration="1998000" />
+      <workItem from="1683100925651" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="身份认证功能第1次提交">
       <created>1561349704707</created>
@@ -508,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562293773760</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="添加用户注册功能">
+      <created>1683101104983</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683101104984</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -641,7 +649,8 @@
     <MESSAGE value="身份认证功能第4次提交" />
     <MESSAGE value="修复" />
     <MESSAGE value="身份认证功能bug修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="身份认证功能bug修复" />
+    <MESSAGE value="添加用户注册功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加用户注册功能" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
