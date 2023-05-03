@@ -1,4 +1,4 @@
-package cn.itcast.wanxinp2p.consumer.service;
+package cn.itcast.wanxinp2p.consumer.service.impl;
 
 import cn.itcast.wanxinp2p.api.account.model.AccountDTO;
 import cn.itcast.wanxinp2p.api.account.model.AccountRegisterDTO;
@@ -13,6 +13,7 @@ import cn.itcast.wanxinp2p.consumer.agent.AccountApiAgent;
 import cn.itcast.wanxinp2p.consumer.common.ConsumerErrorCode;
 import cn.itcast.wanxinp2p.consumer.entity.Consumer;
 import cn.itcast.wanxinp2p.consumer.mapper.ConsumerMapper;
+import cn.itcast.wanxinp2p.consumer.service.ConsumerService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
@@ -55,6 +56,7 @@ public class ConsumerServiceImpl extends ServiceImpl<ConsumerMapper, Consumer> i
         if(restResponse.getCode()!= CommonErrorCode.SUCCESS.getCode()){
             throw new BusinessException(ConsumerErrorCode.E_140106);
         }
+
     }
 
     /**

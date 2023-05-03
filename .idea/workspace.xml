@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="添加用户注册功能" />
+    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="添加用户注册功能">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/${project.name}_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/${project.name}_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/agent/AccountApiAgent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/service/ConsumerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/service/ConsumerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-gateway-server/target/classes/application.yml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,6 +254,9 @@
     <property name="project.structure.side.proportion" value="0.26436782" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cn.itcast.wanxinp2p.api.consumer" />
@@ -267,7 +286,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConsumerService">
+  <component name="RunManager" selected="Spring Boot.DiscoveryServer">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.wanxinp2p.generator.CodeGenerator" />
       <module name="wanxinp2p-consumer-service" />
@@ -388,7 +407,8 @@
       <workItem from="1574045587771" duration="80000" />
       <workItem from="1683047068491" duration="2736000" />
       <workItem from="1683095395873" duration="1998000" />
-      <workItem from="1683100925651" duration="338000" />
+      <workItem from="1683100925651" duration="5648000" />
+      <workItem from="1683122718082" duration="3730000" />
     </task>
     <task id="LOCAL-00001" summary="身份认证功能第1次提交">
       <created>1561349704707</created>
@@ -516,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683101104984</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="添加用户注册功能">
+      <created>1683101382201</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683101382201</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -626,7 +653,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -651,6 +684,17 @@
     <MESSAGE value="身份认证功能bug修复" />
     <MESSAGE value="添加用户注册功能" />
     <option name="LAST_COMMIT_MESSAGE" value="添加用户注册功能" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/controller/ConsumerController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
