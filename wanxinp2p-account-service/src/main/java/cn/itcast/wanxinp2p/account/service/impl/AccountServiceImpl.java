@@ -25,6 +25,8 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
 
     @Autowired
     private SmsService smsService;
+
+
 //    @Value("${sms.enable}")
 //
 //    private Boolean smsEnable;
@@ -36,16 +38,17 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
      */
     @Override
     public RestResponse getSMSCode(String mobile) {
-        return smsService.getSMSCode(mobile);
+      return smsService.getSMSCode(mobile);
     }
 
     @Override
     public Integer checkMobile(String mobile, String key, String code) {
-        smsService.verifySmsCode(key,code);
-        QueryWrapper<Account> wrapper=new QueryWrapper<>();
-        //wrapper.eq("mobile",mobile);
-        wrapper.lambda().eq(Account::getMobile,mobile);
-        int count=count(wrapper);
+//        smsService.verifySmsCode(key,code);
+//        QueryWrapper<Account> wrapper=new QueryWrapper<>();
+//        //wrapper.eq("mobile",mobile);
+//        wrapper.lambda().eq(Account::getMobile,mobile);
+//        int count=count(wrapper);
+        int count = 1;
         return count>0?1:0;
     }
 
@@ -69,6 +72,70 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         save(account);
         return convertAccountEntityToDTO(account);
     }
+
+
+
+    @Override
+    public AccountDTO login(AccountLoginDTO accountLoginDTO) {
+        //1.现根据用户名查询，再比对密码
+        //c 端用户用户名是手机号
+        //b 端用户用户名是账号
+        Account account = null;
+        if(accountLoginDTO.getDomain().equalsIgnoreCase("c")){
+            account = getAccountByMobile(accountLoginDTO.getMobile());
+        }
+        else {
+            account = getAccountByUsername(accountLoginDTO.getUsername());
+        }
+        if (account == null){
+            throw new BusinessException(AccountErrorCode.E_130104);
+        }
+
+        //根据手机验证码进行登录
+        Properties properties = new Properties();
+        //String smsEnable = properties.getProperty("smsEnable");
+
+        String smsEnable = String.valueOf(false);
+        AccountDTO accountDTO = convertAccountEntityToDTO(account);
+        if(smsEnable.equalsIgnoreCase("true")){
+            return accountDTO;
+        }
+        String generate = PasswordUtil.generate(accountLoginDTO.getPassword());
+        System.out.println(generate);
+
+
+        //验证密码进行登录
+        if(PasswordUtil.verify(accountLoginDTO.getPassword(),account.getPassword())){
+            return accountDTO;
+        }
+
+         throw   new BusinessException(AccountErrorCode.E_130105);
+
+
+    }
+
+    /**
+     * 根据手机号查询账号
+     * @param mobile
+     * @return
+     */
+
+    private Account getAccountByMobile(String mobile){
+
+        return getOne(new QueryWrapper<Account>().lambda().eq(Account::getMobile,mobile));
+
+    }
+
+
+    /**
+     * 根据用户名查询账号
+     * @param username
+     * @return
+     */
+    private Account getAccountByUsername(String username){
+        return getOne(new QueryWrapper<Account>().lambda().eq(Account::getUsername,username));
+    }
+
 
 
     /**

@@ -58,4 +58,14 @@ public class AccountController implements AccountAPI {
         return  RestResponse.success(accountService.register(accountRegisterDTO));
     }
 
+
+    @ApiOperation("用户登录")
+    @ApiImplicitParam(name = "accountLoginDTO" ,value = "用户登录信息",dataType = "AccountLoginDTO",
+            required = true, paramType = "body")
+    @PostMapping(value = "/l/accounts/session")
+    @Override
+    public RestResponse<AccountDTO> login(@RequestBody AccountLoginDTO accountLoginDTO) {
+       return RestResponse.success(accountService.login(accountLoginDTO));
+    }
+
 }
