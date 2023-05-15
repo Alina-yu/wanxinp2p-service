@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="增加新用户注册功能">
+    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="增加uaa认证，生成token">
       <change afterPath="$PROJECT_DIR$/logs/2023-05-03/${project.name}_error.2023-05-03-23.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/2023-05-03/${project.name}_info.2023-05-03-23.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/2023-05-09/${project.name}_error.2023-05-09-19.log" afterDir="false" />
@@ -62,118 +62,32 @@
       <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-21.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-22.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/config/ConsumerServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/UAAServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/agent/AccountApiAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/common/cache/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/common/intercept/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/common/utils/ApplicationContextHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/common/utils/GuidGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/common/utils/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/common/utils/WebUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/config/AuthorizationServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/config/JWTConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/config/OauthUserApprovalHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/config/RestOAuth2Exception.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/config/RestOAuthExceptionJacksonSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/controller/UUAController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/ClientDefaultAccessTokenConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/CustomJdbcClientDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/IntegrationUserDetailsAuthenticationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/IntegrationUserDetailsAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/IntegrationWebAuthenticationDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/IntegrationWebAuthenticationDetailsSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/OauthClientDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/OauthClientDetailsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/UnifiedUserAuthenticationConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/UnifiedUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/repository/OauthClientDetailsRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/repository/OauthRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/repository/OauthRepositoryJdbc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/repository/PasswordHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/service/OauthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/service/OauthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/apollo-env.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/log4j2-dev.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/static/img/error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/static/img/password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/static/img/username.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/templates/oauth_approval.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/templates/oauth_error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/apollo-env.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/UAAServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/cache/RedisCache.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/intercept/GlobalExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/utils/ApplicationContextHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/utils/GuidGenerator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/utils/StringUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/utils/WebUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/AuthorizationServer$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/AuthorizationServer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/JWTConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/OauthUserApprovalHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2Exception.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator$ForbiddenException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator$MethodNotAllowed.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator$ServerErrorException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator$UnauthorizedException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuthExceptionJacksonSerializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/SecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/controller/UUAController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/ClientDefaultAccessTokenConverter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/CustomJdbcClientDetailsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/IntegrationUserDetailsAuthenticationHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/IntegrationUserDetailsAuthenticationProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/IntegrationWebAuthenticationDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/IntegrationWebAuthenticationDetailsSource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/OauthClientDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/OauthClientDetailsDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/UnifiedUserAuthenticationConverter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/UnifiedUserDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/repository/OauthClientDetailsRowMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/repository/OauthRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/repository/OauthRepositoryJdbc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/repository/PasswordHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/service/OauthService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/service/OauthServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/log4j2-dev.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/static/img/error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/static/img/password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/static/img/username.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/templates/oauth_approval.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/templates/oauth_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_error.2023-05-15-00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_error.2023-05-15-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_info.2023-05-15-00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_info.2023-05-15-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/config/ClientDefaultAccessTokenConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/config/JWTConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/config/ResouceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/config/RestAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/config/RestOAuth2AuthExceptionEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/filter/AuthFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/${project.name}_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/${project.name}_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/account/AccountAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/account/AccountAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-api/target/classes/cn/itcast/wanxinp2p/api/AccountAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-api/target/classes/cn/itcast/wanxinp2p/api/AccountAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/resources/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/resources/log4j2-dev.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/log4j2-dev.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/controller/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/controller/ConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/log4j2-dev.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/controller/ConsumerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/controller/ConsumerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/log4j2-dev.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wanxinp2p-gateway-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wanxinp2p-gateway-server/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/config/ConsumerServerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/resources/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/resources/log4j2-dev.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-gateway-server/target/classes/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-gateway-server/target/classes/log4j2-dev.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/resources/log4j2-dev.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/log4j2-dev.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,7 +326,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564470154512" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/filter" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -428,11 +342,14 @@
       <recent name="cn.itcast.wanxinp2p.api.consumer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/filter" />
+      <recent name="$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/config" />
       <recent name="C:\Users\apple\Desktop\wanxinp2p\day02\代码\wanxinp2p_apollo\wanxinp2p-api\src\main\java\cn\itcast\wanxinp2p\api\account\model" />
       <recent name="C:\Users\apple\Desktop\wanxinp2p\day02\代码\wanxinp2p_apollo\wanxinp2p-consumer-service\src\main\java\cn\itcast\wanxinp2p\consumer\common" />
       <recent name="C:\Users\apple\Desktop\wanxinp2p\day02\代码\wanxinp2p_apollo\wanxinp2p-api\src\main\java\cn\itcast\wanxinp2p\api\consumer\model" />
-      <recent name="C:\Users\apple\Desktop\wanxinp2p\day02\代码\wanxinp2p_apollo\wanxinp2p-consumer-service\src\main\java\cn\itcast\wanxinp2p\consumer\entity" />
-      <recent name="C:\Users\xu\Desktop\wanxinp2p\day02\代码\wanxinp2p_apollo\wanxinp2p-common\src\main\java\cn\itcast\wanxinp2p\common\util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xu\Desktop\wanxinp2p\day02\代码\wanxinp2p_apollo\wanxinp2p-account-service\src\main\java\cn\itcast\wanxinp2p\account\mapper\xml" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.itcast.wanxinp2p.api.file" />
@@ -440,9 +357,6 @@
       <recent name="cn.itcast.wanxinp2p.file.common.util" />
       <recent name="cn.itcast.wanxinp2p.file.config" />
       <recent name="cn.itcast.wanxinp2p.consumer.mapper" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\xu\Desktop\wanxinp2p\day02\代码\wanxinp2p_apollo\wanxinp2p-account-service\src\main\java\cn\itcast\wanxinp2p\account\mapper\xml" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -589,7 +503,8 @@
       <workItem from="1683288538752" duration="3273000" />
       <workItem from="1683589588627" duration="915000" />
       <workItem from="1683626714647" duration="9062000" />
-      <workItem from="1683817753522" duration="22306000" />
+      <workItem from="1683817753522" duration="23040000" />
+      <workItem from="1684153218320" duration="3275000" />
     </task>
     <task id="LOCAL-00001" summary="身份认证功能第1次提交">
       <created>1561349704707</created>
@@ -731,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683128055770</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="增加uaa认证，生成token">
+      <created>1684081024959</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684081024959</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -873,16 +795,12 @@
     <MESSAGE value="身份认证功能bug修复" />
     <MESSAGE value="添加用户注册功能" />
     <MESSAGE value="增加新用户注册功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加新用户注册功能" />
+    <MESSAGE value="增加uaa认证，生成token" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加uaa认证，生成token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/controller/ConsumerController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.java</url>
           <line>83</line>
@@ -894,8 +812,13 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.java</url>
-          <line>124</line>
+          <url>file://$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/controller/ConsumerController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/wanxinp2p-gateway-server/src/main/java/cn/itcast/wanxinp2p/gateway/filter/AuthFilter.java</url>
+          <line>37</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
