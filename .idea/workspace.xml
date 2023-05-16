@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="验证认证拦截功能">
+    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="添加前置请求拦截控制器">
       <change afterPath="$PROJECT_DIR$/logs/2023-05-03/${project.name}_error.2023-05-03-23.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/2023-05-03/${project.name}_info.2023-05-03-23.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/2023-05-09/${project.name}_error.2023-05-09-19.log" afterDir="false" />
@@ -66,10 +66,6 @@
       <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_error.2023-05-15-23.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_info.2023-05-15-00.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_info.2023-05-15-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/account/model/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/interceptor/TokenInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/${project.name}_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/${project.name}_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_info.log" afterDir="false" />
     </list>
@@ -489,7 +485,7 @@
       <workItem from="1683626714647" duration="9062000" />
       <workItem from="1683817753522" duration="23040000" />
       <workItem from="1684153218320" duration="3405000" />
-      <workItem from="1684250332175" duration="1709000" />
+      <workItem from="1684250332175" duration="2003000" />
     </task>
     <task id="LOCAL-00001" summary="身份认证功能第1次提交">
       <created>1561349704707</created>
@@ -645,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684167596034</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="添加前置请求拦截控制器">
+      <created>1684252427805</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1684252427805</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -789,7 +792,8 @@
     <MESSAGE value="增加新用户注册功能" />
     <MESSAGE value="增加uaa认证，生成token" />
     <MESSAGE value="验证认证拦截功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="验证认证拦截功能" />
+    <MESSAGE value="添加前置请求拦截控制器" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加前置请求拦截控制器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

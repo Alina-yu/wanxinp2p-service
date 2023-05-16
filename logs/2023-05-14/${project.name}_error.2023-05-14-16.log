@@ -1,11 +1,4 @@
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:03:57,862 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:08:57,850 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:13:57,848 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,907 INFO [Thread-20][EurekaServiceRegistry.java:65] - Unregistering application ACCOUNT-SERVICE with eureka with status DOWN
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,909 WARN [Thread-20][DiscoveryClient.java:1303] - Saw local status change event StatusChangeEvent [timestamp=1684167463909, current=DOWN, previous=UP]
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,910 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.1.101:53030: registering service...
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,932 INFO [Thread-20][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,921 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+[${project.name}][${env:SERVER_PORT}] 2023-05-14 17:20:40,944 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -55,8 +48,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 29 more
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,940 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,941 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+[${project.name}][${env:SERVER_PORT}] 2023-05-14 17:20:40,955 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -107,46 +99,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 more
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,943 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,946 WARN [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:831] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.1.101:53030 - registration failed Cannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:43,947 WARN [DiscoveryClient-InstanceInfoReplicator-0][InstanceInfoReplicator.java:125] - There was a problem with the instance info replicator
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:45,078 INFO [Thread-20][DruidDataSource.java:1885] - {dataSource-1} closing ...
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:45,087 INFO [Thread-20][DruidDataSource.java:1955] - {dataSource-1} closed
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:45,094 INFO [Thread-20][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:48,102 INFO [Thread-20][DiscoveryClient.java:922] - Unregistering ...
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:48,109 ERROR [Thread-20][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+[${project.name}][${env:SERVER_PORT}] 2023-05-14 17:20:45,129 ERROR [Thread-22][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -209,8 +162,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 42 more
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:48,117 WARN [Thread-20][RetryableEurekaHttpClient.java:130] - Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:48,117 ERROR [Thread-20][DiscoveryClient.java:926] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.1.101:53030 - de-registration failedCannot execute request on any known server
+[${project.name}][${env:SERVER_PORT}] 2023-05-14 17:20:45,132 ERROR [Thread-22][DiscoveryClient.java:926] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:192.168.1.101:53050 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -239,4 +191,3 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
-[${project.name}][${env:SERVER_PORT}] 2023-05-16 00:17:48,134 INFO [Thread-20][DiscoveryClient.java:911] - Completed shut down of DiscoveryClient
