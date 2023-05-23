@@ -5,69 +5,107 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="添加前置请求拦截控制器">
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-03/${project.name}_error.2023-05-03-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-03/${project.name}_info.2023-05-03-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-09/${project.name}_error.2023-05-09-19.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-09/${project.name}_info.2023-05-09-07.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-09/${project.name}_info.2023-05-09-18.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-09/${project.name}_info.2023-05-09-19.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-10/${project.name}_error.2023-05-10-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-10/${project.name}_info.2023-05-10-22.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-10/${project.name}_info.2023-05-10-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_error.2023-05-11-03.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_error.2023-05-11-04.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_error.2023-05-11-05.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_error.2023-05-11-20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_error.2023-05-11-21.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_error.2023-05-11-22.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_error.2023-05-11-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-01.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-02.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-03.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-04.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-05.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-07.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-09.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-10.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-11.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-12.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-13.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-17.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-18.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-19.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-21.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-22.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-11/${project.name}_info.2023-05-11-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-12/${project.name}_error.2023-05-12-00.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-12/${project.name}_info.2023-05-12-00.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_error.2023-05-14-14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_error.2023-05-14-15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_error.2023-05-14-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_error.2023-05-14-17.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_error.2023-05-14-18.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_error.2023-05-14-22.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_error.2023-05-14-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-17.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-18.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-19.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-21.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-22.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-14/${project.name}_info.2023-05-14-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_error.2023-05-15-00.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_error.2023-05-15-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_info.2023-05-15-00.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/2023-05-15/${project.name}_info.2023-05-15-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_caucho_hessian_4_0_38.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_api_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_collectionschema_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_core_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_runtime_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dromara_hmily_annotation_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dromara_hmily_common_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dromara_hmily_core_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dromara_hmily_springcloud_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-16/${project.name}_error.2023-05-16-00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-16/${project.name}_info.2023-05-16-00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-21/${project.name}_error.2023-05-21-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-21/${project.name}_info.2023-05-21-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-22/${project.name}_error.2023-05-22-00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-22/${project.name}_error.2023-05-22-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-22/${project.name}_info.2023-05-22-00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-22/${project.name}_info.2023-05-22-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-22/${project.name}_info.2023-05-22-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-23/${project.name}_error.2023-05-23-21.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-23/${project.name}_error.2023-05-23-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-23/${project.name}_info.2023-05-23-21.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-23/${project.name}_info.2023-05-23-22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2023-05-23/${project.name}_info.2023-05-23-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/config/HmilyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/config/HmilyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/${project.name}_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/${project.name}_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/AccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-account-service/target/classes/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-api/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-api/target/wanxinp2p-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-common/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-common/target/wanxinp2p-common.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/ConsumerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/agent/AccountApiAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/agent/AccountApiAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/service/impl/ConsumerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/ConsumerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/ConsumerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/agent/AccountApiAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/agent/AccountApiAgent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/service/impl/ConsumerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wanxinp2p-consumer-service/target/classes/cn/itcast/wanxinp2p/consumer/service/impl/ConsumerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-discover-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-discover-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/UAAServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/agent/AccountApiAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/cache/RedisCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/intercept/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/utils/ApplicationContextHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/utils/GuidGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/utils/StringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/common/utils/WebUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/AuthorizationServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/AuthorizationServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/JWTConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/OauthUserApprovalHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2Exception.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator$ForbiddenException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator$MethodNotAllowed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator$ServerErrorException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator$UnauthorizedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuth2WebResponseExceptionTranslator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/RestOAuthExceptionJacksonSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/controller/UUAController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/ClientDefaultAccessTokenConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/CustomJdbcClientDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/IntegrationUserDetailsAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/IntegrationUserDetailsAuthenticationProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/IntegrationWebAuthenticationDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/IntegrationWebAuthenticationDetailsSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/OauthClientDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/OauthClientDetailsDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/UnifiedUserAuthenticationConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/domain/UnifiedUserDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/repository/OauthClientDetailsRowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/repository/OauthRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/repository/OauthRepositoryJdbc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/repository/PasswordHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/service/OauthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wanxinp2p-uaa-service/target/classes/cn/itcast/wanxinp2p/uaa/service/OauthServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,10 +347,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/account/model" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26436782" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -346,7 +384,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServer">
+  <component name="RunManager" selected="Spring Boot.ConsumerService">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itcast.wanxinp2p.generator.CodeGenerator" />
       <module name="wanxinp2p-consumer-service" />
@@ -381,6 +419,7 @@
     <configuration name="DiscoveryServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wanxinp2p-discover-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.discover.DiscoveryServer" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53090" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -485,7 +524,18 @@
       <workItem from="1683626714647" duration="9062000" />
       <workItem from="1683817753522" duration="23040000" />
       <workItem from="1684153218320" duration="3405000" />
-      <workItem from="1684250332175" duration="2003000" />
+      <workItem from="1684250332175" duration="2209000" />
+      <workItem from="1684592783472" duration="2328000" />
+      <workItem from="1684595405977" duration="31000" />
+      <workItem from="1684595465649" duration="14000" />
+      <workItem from="1684595507202" duration="1480000" />
+      <workItem from="1684597112745" duration="35000" />
+      <workItem from="1684679510298" duration="3800000" />
+      <workItem from="1684757176892" duration="1345000" />
+      <workItem from="1684768964901" duration="555000" />
+      <workItem from="1684847442464" duration="224000" />
+      <workItem from="1684847701538" duration="1126000" />
+      <workItem from="1684858130793" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="身份认证功能第1次提交">
       <created>1561349704707</created>
@@ -648,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684252427805</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="添加前置请求拦截控制器">
+      <created>1684252664151</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1684252664151</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -799,11 +856,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/wanxinp2p-account-service/src/main/java/cn/itcast/wanxinp2p/account/service/impl/AccountServiceImpl.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/wanxinp2p-uaa-service/src/main/java/cn/itcast/wanxinp2p/uaa/domain/IntegrationUserDetailsAuthenticationHandler.java</url>
           <line>43</line>
           <option name="timeStamp" value="5" />
@@ -813,6 +865,10 @@
           <line>37</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.mongodb.MongoSocketOpenException" package="com.mongodb" />
+          <option name="timeStamp" value="8" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

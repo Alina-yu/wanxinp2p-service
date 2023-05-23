@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -41,7 +42,7 @@
       <module name="MyTest" options="" />
       <module name="demo" options="-parameters" />
       <module name="wanxindepository" options="-parameters" />
-      <module name="wanxinp2p" options="-parameters" />
+      <module name="wanxinp2p" options="" />
       <module name="wanxinp2p-account-service" options="-parameters" />
       <module name="wanxinp2p-api" options="-parameters" />
       <module name="wanxinp2p-common" options="-parameters" />
