@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @desciption:
  */
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"org.dromara.hmily","cn.itcast.wanxinp2p.account"})
 @EnableDiscoveryClient
 @MapperScan("cn.itcast.wanxinp2p.account.mapper")
 @EnableFeignClients(basePackages = {"cn.itcast.wanxinp2p.account.agent"})

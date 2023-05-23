@@ -13,7 +13,10 @@ import cn.itcast.wanxinp2p.common.domain.BusinessException;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.common.util.PasswordUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import lombok.extern.slf4j.Slf4j;
+import org.dromara.hmily.annotation.Hmily;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +24,7 @@ import org.springframework.stereotype.Service;
 import java.util.Properties;
 
 @Service
+@Slf4j
 public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> implements AccountService {
 
     @Autowired
@@ -58,6 +62,7 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
      * @return
      */
     @Override
+    @Hmily(confirmMethod = "confirmRegister",cancelMethod = "cancelRegister")
     public AccountDTO register(AccountRegisterDTO accountRegisterDTO) {
         Properties properties  = new Properties();
         Boolean smsEnable = Boolean.valueOf(properties.getProperty("smsEnable"));
@@ -72,6 +77,17 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         save(account);
         return convertAccountEntityToDTO(account);
     }
+    public void confirmRegister(AccountRegisterDTO accountRegisterDTO){
+        log.info("execute confirmRegister");
+    }
+    public void cancelRegister(AccountRegisterDTO accountRegisterDTO){
+        log.info("execute cancelRegister");
+        //删除账号
+        remove(Wrappers.<Account>lambdaQuery().eq(Account::getUsername,accountRegisterDTO.getUsername()));
+    }
+
+
+
 
 
 
